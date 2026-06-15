@@ -34,8 +34,8 @@ Now use the approach in .claude/agents/story.md to help me sell my experience. W
 - the honest case for why I'm worth a senior, high-paying role, including how to handle "overqualified" or any career pivot or gap
 Save all of this so we can reuse it. Tell me what's genuinely strong about my background as we go. I want to walk away from this step feeling clear and confident about how I come across.
 
-STEP 4 - Decide what to aim for.
-Based on my experience and what I'm great at, suggest 2 or 3 specific roles I'm a strong fit for, explain why for each, and ask where I want to work (city, remote, hybrid) and what level. Save these into the TARGET ROLES section of my career file.
+STEP 4 - Decide what to aim for, including pay.
+Based on my experience and what I'm great at, suggest 2 or 3 specific senior roles I'm a strong fit for, explain why for each, and ask where I want to work (city, remote, hybrid). Then ask me my compensation floor: the minimum salary below which a role isn't worth my time. Given my level of experience, help me set a number that reflects my real market value, not a timid one. Save the roles and the floor into the TARGET ROLES section of my career file. From now on, never show me a job below that floor without flagging it.
 
 STEP 5 - (Optional) Capture my writing voice.
 Ask if I want cover letters, posts, and messages to sound like me instead of generic AI. If yes, ask me to paste 2 or 3 things I've written and save them into .claude/agents/echo/style-profile.md. If I don't care right now, skip it.
@@ -43,15 +43,18 @@ Ask if I want cover letters, posts, and messages to sound like me instead of gen
 STEP 6 - Teach me how to use this from now on.
 Explain in plain English that I have these simple tools:
 - /story - to keep sharpening how I present myself, and to prep for interviews
+- /linkedin - to build my full LinkedIn profile copy (you write it, I paste it in)
+- /jobhunt - to find the best-paying jobs that fit me, from the job boards AND from the job-alert emails LinkedIn and others send to my Gmail, ranked by pay and fit, with anything below my floor flagged
 - /apply then paste a job posting - you score my fit, then tailor a resume
 - /write - to write anything in my voice (cover letter, a note to a recruiter, a LinkedIn post)
 - just ask you to "research [company] for my interview" - and you'll prep me
 - just ask you to "compare these two job offers" - and you'll do the money math
+Be honest with me that two things are mine to do by hand: clicking the final "submit" on an application, and pasting the LinkedIn text into my profile. You do everything up to that point.
 
 STEP 7 - Open the door (the strategy that actually works for someone like me).
 Explain honestly that for senior, well-paid roles, a warm introduction or a direct message to a hiring manager beats firing resumes into job boards. Then help me act on it:
 - Ask who in my network might know of opportunities or could introduce me, and offer to draft those messages in my voice.
-- Then also search Indeed and ZipRecruiter for my target roles near my location, show me the 5 best matches with a one-line reason for each, and ask if I want to apply to any.
+- Then run a first /jobhunt: search Indeed and ZipRecruiter for my target roles, check my Gmail for any job-alert emails, show me the 5 best-paid matches that clear my floor with a one-line reason and the salary for each, and ask if I want a tailored resume for any.
 
 Rules for everything you do: never invent a job, title, date, number, or accomplishment, and if a posting wants something I don't have, tell me straight. Keep all writing in plain English with no em dashes. Above all, be encouraging and treat me like the capable, experienced person I am. Start with Step 0 now.
 ```

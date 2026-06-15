@@ -13,6 +13,8 @@ You don't need to understand any of the files. You talk to Claude in plain Engli
 | **Story** | Turns your experience into a clear, compelling story so people see your value fast. Your value proposition, signature stories, "tell me about yourself," LinkedIn, and the case for a senior role. **Start here.** | Type `/story` |
 | **Pitch** | Reads a job description, scores how well you fit, then tailors your resume (and a cover letter if you want one) to that specific job. Never makes anything up. | Type `/apply` and paste a job description |
 | **Echo** | Writes things in *your* voice, not generic AI voice. Cover letters, LinkedIn posts, recruiter emails. | Type `/write` and say what you need |
+| **Job hunt** | Searches the boards *and* reads the job-alert emails sent to your Gmail, ranks by pay and fit, and skips anything below your salary floor. | Type `/jobhunt` |
+| **LinkedIn** | Writes your full profile (headline, About, experience, skills) ready to paste in. | Type `/linkedin` |
 | **Scout** | Researches a company, role, or industry before you apply or interview. Interview prep. | Just ask: "research [company] for my interview" |
 | **Vault** | Money questions: compare two job offers, salary benchmarks, negotiation math, budgeting. | Just ask: "compare these two offers" |
 | **Spark** | Marketing and personal-brand content if you want it. | Just ask |

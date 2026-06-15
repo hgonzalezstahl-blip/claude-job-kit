@@ -6,8 +6,11 @@ Keep this nearby. Everything you do happens by talking to Claude in plain Englis
 
 ## The only 3 things you do
 
-**1. Find jobs**
-> Search Indeed and ZipRecruiter for [my target role] near [my city] posted this week, and rank the top 10 for my background.
+**1. Find the best-paying jobs** — type:
+```
+/jobhunt
+```
+Searches the job boards and the job-alert emails in your Gmail, ranks by pay and fit, and skips anything below your salary floor.
 
 **2. Apply to a job** — type this, then paste the job posting:
 ```
@@ -19,6 +22,12 @@ Claude scores how well you fit *first*, asks if you want to continue, then puts 
 ```
 /write a cover letter for the job in jobs/[filename].md
 ```
+
+**Plus:**
+- `/story` — sharpen how you sell yourself, and prep for interviews
+- `/linkedin` — get your full LinkedIn profile written, ready to paste in
+
+*Two things are yours to do by hand: clicking the final "submit" on an application, and pasting the LinkedIn text into your profile. Claude does everything up to that.*
 
 ---
 

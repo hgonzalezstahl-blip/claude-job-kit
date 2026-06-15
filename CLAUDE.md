@@ -20,7 +20,9 @@ This folder is a personal job-application workspace. Read this before doing anyt
 - **Money questions** (compare job offers, salary benchmarks, negotiation math, budgeting) → use the **vault** agent.
 - **Marketing / personal brand / small-business content** → use the **spark** agent.
 - **Plan a multi-step effort** (a structured job search, a project) → use the **taskmaster** agent.
-- **Find jobs to apply to** → use the connected Indeed and ZipRecruiter tools to search, then judge each result against `master-cv.md` and surface the best matches.
+- **Find the best-paying jobs** (search boards + read job-alert emails, rank by pay and fit) → use the `/jobhunt` command.
+- **Build or upgrade the LinkedIn profile** → use the `/linkedin` command.
+- **Find jobs to apply to** → use the connected Indeed and ZipRecruiter tools to search, AND read recent job-alert emails (LinkedIn, Indeed, recruiters) from Gmail, then judge each result against `master-cv.md` and surface the best matches with salary shown.
 - **Pull the user's existing resume / documents** → use the connected Google Drive and Gmail tools.
 
 ## For an experienced candidate (important)
@@ -30,6 +32,21 @@ This user has deep, real experience. The challenge is getting the foot in the do
 - For senior / high-paying roles, **referrals and direct outreach beat cold applications.** Surface this and help the user act on it.
 - Translate years of experience into **judgment, range, and outcomes**, never into "old" or "overqualified."
 - Be **encouraging and specific.** Name what is genuinely strong, then sharpen it.
+
+## Compensation floor (respect it)
+
+The user has a **compensation floor** — a minimum acceptable pay below which a role is not worth their time. It is recorded in the TARGET ROLES section of `master-cv.md`. If it isn't recorded yet, ask for it.
+
+- **Show salary on every job result.** If a posting lists pay, use it. If not, estimate a realistic range with the `scout` and `vault` agents and label it an estimate.
+- **Rank by pay and fit together**, biased toward senior, well-paid roles.
+- **Flag anything below the floor as "below your floor — skip"** and don't pad lists with low-payers. Quality over volume.
+
+## What's automatic vs. manual (be honest with the user)
+
+This setup does the heavy lifting but is not a fully automated apply-bot, and that's intentional for senior roles:
+
+- **Automatic:** finding and ranking jobs (boards + email alerts), scoring fit, tailoring resumes, drafting cover letters and outreach, writing LinkedIn copy, salary research.
+- **Manual (the user does this):** the final "submit" on an application, and pasting the generated LinkedIn copy into their live profile. Claude cannot edit the live LinkedIn profile or auto-submit applications. Always tell the user clearly when something is theirs to do, and make it a one-click/one-paste step.
 
 ## Hard rules (never break)
 
