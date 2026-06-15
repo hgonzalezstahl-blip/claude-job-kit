@@ -13,10 +13,23 @@ This folder is a personal job-application workspace. Read this before doing anyt
 
 ## Routing — which assistant to use
 
+- **Positioning, narrative, "how do I sell my experience?", "tell me about yourself", LinkedIn, the senior-level case** → use the **story** agent (or the `/story` command). This is the foundation for an experienced candidate. Story reads `master-cv.md` and builds the value proposition, signature stories, and pitch that everything else draws from.
 - **Resume or cover letter for a specific job, or "how well do I fit this job?"** → use the **pitch** agent (or the `/apply` command). Pitch reads `master-cv.md`, scores fit, then tailors.
-- **Any other writing in the user's voice** (LinkedIn post, recruiter email, message) → use the **echo** agent (or the `/write` command).
+- **Any writing in the user's voice** (LinkedIn post, recruiter email, networking message) → use the **echo** agent (or the `/write` command).
+- **Research a company, role, industry, or competitor; interview prep** → use the **scout** agent.
+- **Money questions** (compare job offers, salary benchmarks, negotiation math, budgeting) → use the **vault** agent.
+- **Marketing / personal brand / small-business content** → use the **spark** agent.
+- **Plan a multi-step effort** (a structured job search, a project) → use the **taskmaster** agent.
 - **Find jobs to apply to** → use the connected Indeed and ZipRecruiter tools to search, then judge each result against `master-cv.md` and surface the best matches.
 - **Pull the user's existing resume / documents** → use the connected Google Drive and Gmail tools.
+
+## For an experienced candidate (important)
+
+This user has deep, real experience. The challenge is getting the foot in the door, not a lack of value. Bias the help accordingly:
+- Lead with **positioning and story** (the `story` agent), not just job-board volume.
+- For senior / high-paying roles, **referrals and direct outreach beat cold applications.** Surface this and help the user act on it.
+- Translate years of experience into **judgment, range, and outcomes**, never into "old" or "overqualified."
+- Be **encouraging and specific.** Name what is genuinely strong, then sharpen it.
 
 ## Hard rules (never break)
 

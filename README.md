@@ -10,10 +10,15 @@ You don't need to understand any of the files. You talk to Claude in plain Engli
 
 | Assistant | What it does | How you call it |
 |---|---|---|
+| **Story** | Turns your experience into a clear, compelling story so people see your value fast. Your value proposition, signature stories, "tell me about yourself," LinkedIn, and the case for a senior role. **Start here.** | Type `/story` |
 | **Pitch** | Reads a job description, scores how well you fit, then tailors your resume (and a cover letter if you want one) to that specific job. Never makes anything up. | Type `/apply` and paste a job description |
 | **Echo** | Writes things in *your* voice, not generic AI voice. Cover letters, LinkedIn posts, recruiter emails. | Type `/write` and say what you need |
+| **Scout** | Researches a company, role, or industry before you apply or interview. Interview prep. | Just ask: "research [company] for my interview" |
+| **Vault** | Money questions: compare two job offers, salary benchmarks, negotiation math, budgeting. | Just ask: "compare these two offers" |
+| **Spark** | Marketing and personal-brand content if you want it. | Just ask |
+| **TaskMaster** | Lays out a step-by-step plan (e.g. a 4-week job search). | Just ask: "plan my job search" |
 
-Everything Pitch and Echo know about you comes from two files you fill in once:
+Everything these assistants know about you comes from two files you fill in once:
 
 - `.claude/agents/pitch/master-cv.md` — your complete career history (every job, project, number). This is the single source of truth.
 - `.claude/agents/echo/style-profile.md` — samples of your writing, so Echo can sound like you. (Optional — only needed if you want cover letters or posts in your voice.)
@@ -26,11 +31,14 @@ Everything Pitch and Echo know about you comes from two files you fill in once:
 claude-job-kit/
   README.md          <- you are here
   SETUP.md           <- the one-time setup prompt (open this next)
+  CHEATSHEET.md      <- one-page quick reference
   CLAUDE.md          <- instructions Claude reads automatically
   tracker.md         <- log of what you've applied to
   jobs/              <- save job descriptions here
   resumes/           <- tailored resumes land here
   cover-letters/     <- cover letters land here
+  GITHUB-SETUP.md    <- (later) organize your GitHub the pro way
+  BUILD-YOUR-OWN.md  <- (later) start building your own assistants
   .claude/           <- the AI assistants live here (don't edit)
 ```
 

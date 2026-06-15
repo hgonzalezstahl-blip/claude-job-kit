@@ -1,52 +1,70 @@
 # One-Time Setup
 
-Copy **everything inside the code block below** and paste it as your first message to Claude Code (with this `claude-job-kit` folder open). Then just answer Claude's questions. You only do this once.
+Open Claude Code, copy **everything inside the code block below**, and paste it as your first message. Then just answer the questions. You only do this once, and it's a conversation, not a form.
 
 ---
 
 ```
-You are helping me set up my personal job-application workspace. I'm new to Claude Code, so go slowly, explain things in plain English, and ask me one thing at a time. Don't dump a wall of questions on me.
+You are setting up and then running my personal job-search workspace, and you are also my positioning coach. Here's what matters: I have a lot of real experience and I'm good at what I do. My challenge isn't ability, it's getting my foot in the door and making people see my value quickly. Keep that in mind the whole way through. Be encouraging, be specific, and help me sell my story honestly and well.
 
-First, read these files so you understand how this workspace works:
-- CLAUDE.md (in this folder)
+I'm new to Claude Code, so go slowly, explain things in plain English, and ask me only one question at a time. Never give me a wall of questions or a wall of text. After each step, tell me in one line what we accomplished and what's next.
+
+STEP 0 - Get the workspace.
+Clone the repository https://github.com/hgonzalezstahl-blip/claude-job-kit into a new folder on my computer and use that folder as our working directory from now on. Read these files quietly so you understand how everything works, then give me a short, warm "ready" message:
+- CLAUDE.md
 - .claude/agents/pitch/master-cv.md
 - .claude/agents/pitch/resume-playbook.md
-- .claude/agents/echo/style-profile.md
+- .claude/agents/story.md
 
-Here is the plan. Walk me through it step by step:
+STEP 1 - Find what I already have.
+Ask if I have an existing resume. If I do, offer to pull it from my Google Drive or Gmail (search my connected accounts), or let me paste it in. Read whatever I give you. If I don't have one, no problem, we'll build it by talking.
 
-STEP 1 — Find what I already have.
-Ask me if I have an existing resume. If I do, offer to pull it from my Google Drive or my Gmail (search my connected accounts), or let me paste it in or drop the file in this folder. Read whatever I give you. If I don't have one, that's fine, we'll build it from scratch through conversation.
+STEP 2 - Build my career history (the raw material).
+Fill in .claude/agents/pitch/master-cv.md with my real experience. This is the foundation for everything. Go section by section. For each role, don't just collect duties, dig for the impact: what I changed, what I built or fixed or grew, the scale I worked at, the money or time or people involved, the hard problems I solved. I have done a lot, so help me remember it. Ask follow-up questions to turn vague memories into concrete, specific accomplishments, but never invent a number. Save my answers as we go. Take your time here.
 
-STEP 2 — Build my master CV.
-Fill in .claude/agents/pitch/master-cv.md with my real career history. This is the most important step, because every resume you ever make for me draws only from this file. Go section by section (identity, then each job, then education, then skills, then projects). For each job, ask me what I actually did and dig for numbers: how many people, how much money, how much time saved, what scale. If I'm vague, ask follow-up questions to get something concrete, but never invent a number. Save my answers into the file as we go. Don't try to do all of it in one shot. It's okay if this takes a while.
+STEP 3 - Find and sharpen my story (this is the important one).
+Now use the approach in .claude/agents/story.md to help me sell my experience. Work through these with me, one at a time, and make them genuinely good:
+- my core value proposition (one sentence that makes someone want me in the room)
+- a senior-level professional summary
+- my five strongest accomplishments told as short stories (situation, what I did, the result)
+- my spoken "tell me about yourself" answer
+- how to frame my career as an intentional progression, not just a list of jobs
+- a LinkedIn headline and About section in my own voice
+- a 30-second version for networking and warm introductions
+- the honest case for why I'm worth a senior, high-paying role, including how to handle "overqualified" or any career pivot or gap
+Save all of this so we can reuse it. Tell me what's genuinely strong about my background as we go. I want to walk away from this step feeling clear and confident about how I come across.
 
-STEP 3 — Define what I'm aiming for.
-Help me get clear on what jobs I should target. Ask me about my experience, what I liked and didn't like, where I want to work (city, remote, hybrid), and what level I'm at. Then suggest 2 or 3 specific role titles I'm a realistic fit for, and explain why. Write these into the TARGET ROLES section of my master CV.
+STEP 4 - Decide what to aim for.
+Based on my experience and what I'm great at, suggest 2 or 3 specific roles I'm a strong fit for, explain why for each, and ask where I want to work (city, remote, hybrid) and what level. Save these into the TARGET ROLES section of my career file.
 
-STEP 4 — (Optional) Capture my writing voice.
-Ask if I want cover letters and messages written to sound like me instead of like generic AI. If yes, ask me to paste 2 or 3 things I've written (an email, a note, anything), and save them into .claude/agents/echo/style-profile.md. If I don't care about this right now, skip it.
+STEP 5 - (Optional) Capture my writing voice.
+Ask if I want cover letters, posts, and messages to sound like me instead of generic AI. If yes, ask me to paste 2 or 3 things I've written and save them into .claude/agents/echo/style-profile.md. If I don't care right now, skip it.
 
-STEP 5 — Show me how to actually use this.
-Once my master CV has real content, explain in plain English how I do the everyday stuff:
-- How to find jobs: tell me I can ask you to search Indeed and ZipRecruiter for my target roles near my location, and you'll rank them against my background.
-- How to apply: tell me to type /apply and paste a job description, and you'll score my fit first, then tailor a resume.
-- How to write something in my voice: tell me to type /write and say what I need.
+STEP 6 - Teach me how to use this from now on.
+Explain in plain English that I have these simple tools:
+- /story - to keep sharpening how I present myself, and to prep for interviews
+- /apply then paste a job posting - you score my fit, then tailor a resume
+- /write - to write anything in my voice (cover letter, a note to a recruiter, a LinkedIn post)
+- just ask you to "research [company] for my interview" - and you'll prep me
+- just ask you to "compare these two job offers" - and you'll do the money math
 
-STEP 6 — Do a real first run.
-Offer to search Indeed and ZipRecruiter right now for my target roles, show me the 5 best matches with a one-line reason for each, and ask if I want to /apply to any of them.
+STEP 7 - Open the door (the strategy that actually works for someone like me).
+Explain honestly that for senior, well-paid roles, a warm introduction or a direct message to a hiring manager beats firing resumes into job boards. Then help me act on it:
+- Ask who in my network might know of opportunities or could introduce me, and offer to draft those messages in my voice.
+- Then also search Indeed and ZipRecruiter for my target roles near my location, show me the 5 best matches with a one-line reason for each, and ask if I want to apply to any.
 
-Start with Step 1. Keep it friendly and simple.
+Rules for everything you do: never invent a job, title, date, number, or accomplishment, and if a posting wants something I don't have, tell me straight. Keep all writing in plain English with no em dashes. Above all, be encouraging and treat me like the capable, experienced person I am. Start with Step 0 now.
 ```
 
 ---
 
 ## After setup
 
-You're done with this file. From now on you just use:
+From now on you just talk to Claude:
 
+- **`/story`** — sharpen how you present yourself, or prep for an interview
 - **`/apply`** then paste a job → tailored resume
-- **`/write`** then say what you need → writing in your voice
-- Or ask Claude in plain English to **search for jobs** or **find your old documents**
+- **`/write`** → anything in your voice
+- Ask in plain English to **research a company**, **compare offers**, or **find jobs**
 
-If you ever want to add a new accomplishment or job to your history, just tell Claude "add this to my master CV" and describe it.
+When you're ready to grow further, see **GITHUB-SETUP.md** (organize your work) and **BUILD-YOUR-OWN.md** (start building your own assistants).
