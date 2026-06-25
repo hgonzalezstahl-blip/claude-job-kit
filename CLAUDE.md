@@ -41,6 +41,7 @@ This workspace needs two things working. If you see Word documents failing, a me
 - **Marketing / personal brand / small-business content** → use the **spark** agent.
 - **Plan a multi-step effort** (a structured job search, a project) → use the **taskmaster** agent.
 - **Find the best-paying jobs** (search boards + read job-alert emails, rank by pay and fit) → use the `/jobhunt` command.
+- **Build for several jobs at once** (after a job hunt surfaces a few good roles) → use the `/batch` command. It builds 3-5 packages in parallel and quality-checks them all.
 - **Build or upgrade the LinkedIn profile** → use the `/linkedin` command.
 - **Find jobs to apply to** → use the connected Indeed and ZipRecruiter tools to search, AND read recent job-alert emails (LinkedIn, Indeed, recruiters) from Gmail, then judge each result against `master-cv.md` and surface the best matches with salary shown.
 - **Pull the user's existing resume / documents** → use the connected Google Drive and Gmail tools.
@@ -79,6 +80,7 @@ This setup does the heavy lifting but is not a fully automated apply-bot, and th
 5. **Resumes are ATS-safe:** single column, standard section headings, standard fonts, `.docx`. No tables, text boxes, graphics, or skill-rating bars.
 6. **Match the cover letter font to the resume font.** Open the resume, check the actual font it uses, and make the cover letter match. Do not assume a font.
 7. If `master-cv.md` still has placeholder/bracketed content, say so and help the user populate it before drafting anything.
+8. **Do not over-bold.** On a resume, bold only the section headers, the name and tagline, the role titles, the company name, and — inside a bullet — just the lead phrase plus the numbers. Never bold a whole bullet. Cover letters have no bold in the body. After building any resume or cover, run `py tools/verify_docx.py "<folder>"` and fix anything it flags (use `py tools/fix_bold.py` for over-bold), then re-verify until clean.
 
 ## Dates
 

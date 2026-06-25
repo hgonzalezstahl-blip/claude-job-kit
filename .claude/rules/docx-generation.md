@@ -296,6 +296,24 @@ If the audit returns issues, normalize them to match the master before saving. D
 
 ---
 
+## RULE 10 — Bold Discipline (do not over-bold; match the master's pattern)
+
+**Problem:** when tailoring resume bullets it is easy to set the *entire* bullet to bold. Whole-sentence bold reads as AI-generated clutter, and the user notices it immediately.
+
+**Rule:** Bold is structural, not decorative. In a resume, bold ONLY:
+- the candidate **name** and the **tagline** line,
+- the **ALL-CAPS section headers** (e.g., PROFESSIONAL EXPERIENCE),
+- the **role-title lines** and the **company name** in each company/date line,
+- and — *within a bullet* — only the **lead phrase** (to the first comma) **plus the metrics** (any token with a digit: `$17M`, `5,200+`, `~44%`, `8,000`).
+
+**NEVER make an entire body bullet or project line 100% bold.** **Cover letters carry no body bold at all** (an optional bold `Re: <role>` subject line is the only allowed bold; the body is plain prose).
+
+**Verify + auto-fix (do this for every resume before declaring it done):** run
+`py tools/verify_docx.py "<output folder>"`. If it reports OVER-BOLD bullets, run
+`py tools/fix_bold.py "<resume file>"` (it bolds the lead phrase + metrics, plain the rest, with a `.bak` backup), then re-verify until it reports **All clean**. The same verify also flags em-dashes and leftover placeholders.
+
+---
+
 ## RULES THAT WORKED — KEEP DOING
 
 These are patterns that were praised in human review and should be the default going forward:
